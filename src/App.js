@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+
+import { Routes, Route } from "react-router-dom";
+import NavBar from "./containers/navBar/NavBar.jsx";
 import './App.css';
+import FetchDog from "./pages/FetchDog.jsx";
+import Counter from "./pages/Counter.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar/>
+      <Routes>
+        <Route path="/FetchDog" element={<FetchDog />}></Route>
+        <Route path="/Counter" element={<Counter/>}></Route>
+      </Routes>
+    </>
   );
 }
 

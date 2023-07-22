@@ -1,0 +1,47 @@
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(37 37 37);
+}
+
+.nav-logo {
+    margin: 0.5rem 0;
+}
+
+.nav-logo__img {
+    width: 3.7rem;
+    border-radius: 100%;
+}
+
+.nav__elements {
+    display: flex;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.nav__list {
+    color: #b7b7b7;
+    font-size: 1.4rem;
+}
+
+.nav__list:hover {
+    color:rgb(123, 134, 209)
+}
+
+.nav-login__elements {
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+}
+
+.nav-login {
+    margin: 1.5rem 0;
+}
+
+.nav-login__list {
+    color: #b7b7b7;
+    font-size: 1.3rem;
+}
+
+
